@@ -1,17 +1,30 @@
-# Python
+# Python bytecode and caches
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Virtual environment
+# Virtual environments
+.venv/
 venv/
-.env/
+env/
 
-# OS files
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# OS and editor files
 .DS_Store
 Thumbs.db
+.vscode/
 
-# Database
+# Local application data
 Main App/data.db
-
-# Logs
+Main App/*.db
 *.log
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/

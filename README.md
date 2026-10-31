@@ -91,6 +91,8 @@ ai-gym-coach/
 
 The MediaPipe model file is included at `Main App/ml_models/pose_landmarker_full.task`. Keep this file in place; the video processor loads it when the application starts.
 
+<a id="quick-start"></a>
+
 ## Quick start — Windows
 
 Open PowerShell in the repository folder:

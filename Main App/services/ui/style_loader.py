@@ -2,6 +2,7 @@ import os
 import streamlit as st
 import streamlit.components.v1 as components
 import base64
+from pathlib import Path
  
 
 def load_css(file_path):
@@ -33,7 +34,7 @@ def inject_local_font(font_path, font_name):
     """, unsafe_allow_html=True)
 
 def inject_webrtc_styles():
-    font_path = os.path.join(os.getcwd(), "static", "AdobeClean.otf")
+    font_path = Path(__file__).resolve().parents[2] / "static" / "AdobeClean.otf"
     
     if not os.path.exists(font_path):
         return
